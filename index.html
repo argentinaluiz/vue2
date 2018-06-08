@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>vue2</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="(time, index) in times ">
+          <p>{{ index+1 }} - {{ time.nome }}<img :src="time.escudo"></p>
+        </li>
+      </ul>
+      <ul>
+        <li v-for="x in 100">{{x}}</li>
+      </ul>
+      <ul>
+        <li v-for="(value, key, index) in alfabeto">
+          {{ index }} - {{ key }} : {{ value }}
+        </li>
+      </ul>
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
